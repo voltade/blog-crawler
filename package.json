@@ -1,0 +1,23 @@
+{
+    "name": "blog-scraper-generator",
+    "version": "1.0.0",
+    "description": "TypeScript blog scraper with Cloudflare KV integration",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsx watch src/scraper.ts",
+        "start": "node dist/scraper.js",
+        "scrape": "tsx src/scraper.ts"
+    },
+    "dependencies": {
+        "cheerio": "^1.0.0-rc.12",
+        "node-fetch": "^3.3.2",
+        "openai": "^4.20.1",
+        "@cloudflare/workers-types": "^4.20231025.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.8.0",
+        "tsx": "^4.0.0",
+        "typescript": "^5.2.0"
+    }
+}

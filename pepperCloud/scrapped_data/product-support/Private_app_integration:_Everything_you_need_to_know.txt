@@ -1,0 +1,131 @@
+Title: Private app integration: Everything you need to know
+Description: Step-by-step guide to create private apps in Pepper Cloud CRM. Learn how to set scopes, manage tokens, and create API connections tailored to your workflow.
+Category: product-support
+
+
+Introduction:
+- Not all integrations need to be public or complicated. If you are looking to connect your Pepper Cloud CRM with third-party tools in a way that is secure, controlled, and developer-friendly, the Private App Integration feature is built just for you.
+- Whether you want to sync leads from your internal systems or build workflows with external APIs, the private app integration gives you the flexibility to do it on your terms, without compromising on security.
+
+What is private app integration?
+- Private app integration allows you to create a custom app within Pepper Cloud. This app serves as a secure bridge between your CRM data and external tools, utilising a token-based API connection.
+- The best part? You control exactly what data the app can access and what actions it can perform, such as read, create, update, or delete records in modules like Leads, Accounts, Contacts, and Opportunities.
+
+Why choose private app integration over traditional API keys?
+- Private app integrations are designed to offer secure, flexible, and controlled access to your Pepper Cloud CRM, unlike basic API keys, which often lack fine-grained permissions and visibility. Below is a breakdown of the key reasons businesses choose private integrations over legacy methods.
+
+Security and access control
+- Private app integration provides better control over who can access your data and what they can do with it.
+List items:
+  • Scoped access: Limit access to specific CRM modules and actions like read, create, update, or delete.
+  • Safe token visibility: Tokens are securely stored and accessible via the Auth tab when needed.
+  • Reduced risk exposure: Apps only access what they are explicitly allowed to, avoiding unnecessary data exposure.
+
+Customisation and flexibility
+- These integrations are built to adapt to your internal workflows, allowing each app to serve a unique purpose.
+List items:
+  • Per-app permissions: Assign different access scopes to each private app.
+  • No-code setup: Everything from creation to editing is handled through the UI—no scripting needed.
+  • Editable scopes: Update permissions anytime without generating a new token or reconfiguring the integration.
+
+Modern and maintainable API integration
+- Unlike traditional keys tied to older API versions, private integrations are built with Pepper Cloud’s current infrastructure.
+List items:
+  • Compatible with API: Supports stable, structured endpoints designed for long-term use.
+  • Internal system syncing: Easily connect your CRM with in-house tools and automation workflows.
+
+Team-friendly development
+- Ideal for businesses that need controlled environments for multiple tools, departments, or test phases.
+List items:
+  • Multiple apps allowed: Create different private apps for separate functions, teams, or services.
+  • Testing flexibility: Apps can be updated, edited, or deleted without impacting live data or disrupting other apps.
+
+Private app integration within Pepper Cloud CRM
+- Creating a private app integration in Pepper Cloud is simple, secure, and takes only a few minutes. The process allows you to define exactly what your external app can access, and nothing more. Here is a step-by-step guide:
+
+Step 1: Navigate to the Private app section
+List items:
+  • Log in to your Pepper Cloud CRM.
+  • Go to Settings > Integration > Private app > Click "Integrate"
+
+Step 2: Create your private app
+- Click the "Create new" button. A setup modal will guide you through two main configuration steps:
+
+Step 3: Add app details
+- Fill in the basic information to help identify and describe your integration:
+List items:
+  • Name: Choose a name that describes the purpose (e.g. “Marketing Sync Tool”)
+  • Logo (optional): Upload a square logo (JPG or PNG) to visually identify the app
+  • Description: Add a short note about what the app does or who it is for
+- Once done, click Next.
+
+Step 4: Define scopes and permissions
+- This is where the power and security of private app integration comes into play. You get to decide which parts of your CRM the app can access and what it can do.
+List items:
+  • Modules available: Lead, Contact, Account, Opportunity, Activity, Message
+  • Actions per module: Read, Create, Update, Delete
+- For example:
+List items:
+  • Allow the app to read and create Leads
+  • Restrict access to Contacts and Opportunities
+- Tip: Always follow the principle of least privilege.
+
+Step 5: View or regenerate the token
+- Once your app is saved, a unique access token is created and can be found under the auth tab of your private app.
+List items:
+  • Click the eye icon next to the token to reveal it.
+  • Use the copy icon to copy the token safely.
+  • The token can be used in API headers to authenticate secure requests to your CRM.
+  • If the token is ever compromised or you need a new one, click the Generate new token button.
+- This token remains visible under the Auth tab, so you can return to it at any time.
+
+Managing private app integrations
+- Once your private app integration is live, Pepper Cloud makes it easy to manage access, update permissions, and maintain security, all from a central dashboard.
+
+Edit scopes of private app
+- You can modify the app name, description, or its data access scopes at any time:
+List items:
+  • Go to the private apps listing screen by clicking navigating to "Private app" from "Integration".
+  • Click the three-dot.
+  • Select "Edit" and update the scopes as needed, such as adding access to a new module or removing delete permissions.
+
+Generate auth token
+- To generate auth token, follow the steps.
+List items:
+  • Click on the private app.
+  • Go to "Auth" tab.
+  • Click "Generate new token".
+  • A new token will be created while the old one expires.
+
+Delete a private app
+- If a private app is no longer in use, you can safely revoke access by deleting it.
+List items:
+  • Open the Private apps list.
+  • Click the three-dot menu next to the app.
+  • Select "Delete"
+- This instantly removes the token and access permissions from your CRM.
+
+Frequently asked questions - Private app integration
+- 1. Where can I find the private app feature in Pepper Cloud?
+- You can access it by navigating to Settings > Integration, then, scroll to the private app card.
+- 2. What is a private app integration?
+- A private integration is a secure, custom connection between your Pepper Cloud CRM and external tools, authenticated via access tokens.
+- 3. Can I see the token after creating a private app?
+- Yes. Go to the app’s Auth tab and click the eye icon to reveal the token. You can copy it or generate a new one when needed.
+- 4. What should I do if the token is compromised?
+- Use the "Generate new token" button in the "Auth" tab and use the new token. The current token immediately expires.
+- 5. Can I change what data the app can access later?
+- Yes. You can edit the app to update its scopes (modules and actions) at any time without generating a new token.
+- 6. Is there a limit to how many private apps I can create?
+- Currently, you can create up to 20 private integrations per organisation. This allows you to manage connections for different tools, teams, or workflows while maintaining clarity and control.
+- 7. What are “scopes” in a private app integration?
+- Scopes define the specific CRM modules (like Leads or Accounts) and actions (Read, Create, Update, Delete) the app is allowed to access.
+- 8. How do I rotate a token securely?
+- Click Generate new token in the Auth tab. The old token immediately expired, ensuring a smooth transition to the new one.
+
+Conclusion
+- Private Integrations are a game-changer for teams that want to safely extend the power of Pepper Cloud into other tools and platforms. With granular control, token-based authentication, and an intuitive interface, this feature is designed to empower both developers and operations teams.
+
+Sign up for CRM Blog | Pepper Cloud
+- Unlock the secrets to building your business better and selling faster with expert views, insights, and how-to-guides.
+- No spam. Unsubscribe anytime.

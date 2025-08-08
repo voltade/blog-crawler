@@ -1,0 +1,12 @@
+{
+  "name": "my-worker",
+  "main": "src/main.js",
+  "compatibility_date": "2022-07-12",
+  "workers_dev": false,
+  "kv_namespaces": [
+    {
+      "binding": "blog",
+      "id": "ef2e72758aa14b0580dc97121e026720"
+    }
+  ],
+}
