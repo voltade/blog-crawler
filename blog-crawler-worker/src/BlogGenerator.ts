@@ -72,7 +72,7 @@ content: { width: "100%" }
 import { BlogLayout } from "../../layouts/BlogpageLayout.tsx";
 
 export const fm = {
-    title: "Same as the title you assigned to the post",
+    title: "Same as the title you assignd to the post",
     description: "Same as the description you assigned to the post",
     date: "${currentDate}",
     category: "${aiCategory}",
